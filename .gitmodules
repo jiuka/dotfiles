@@ -4,3 +4,6 @@
 [submodule "vim/bundle/vim-puppet"]
 	path = vim/bundle/vim-puppet
 	url = https://github.com/netdata/vim-puppet
+[submodule "themes/Super-Slim"]
+	path = themes/Super-Slim
+	url = https://github.com/ajashton/Super-Slim.git
