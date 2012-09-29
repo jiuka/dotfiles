@@ -1,0 +1,98 @@
+#                       __               __ _
+#    _____   ___ __    / /__ ___  _ __  / _(_) __ _
+#   / __\ \ / / '_ \  / / __/ _ \| '_ \| |_| |/ _` |
+#  _\__ \\ V /| | | |/ / (_| (_) | | | |  _| | (_| |
+# (_)___/ \_/ |_| |_/_/ \___\___/|_| |_|_| |_|\__, |
+#                                             |___/
+
+### Section for authentication and authorization customizations.
+[auth]
+password-stores = gnome-keyring
+store-passwords = no
+
+### Section for configuring miscelleneous Subversion options.
+[miscellany]
+enable-auto-props = yes
+
+### Section for configuring automatic properties.
+[auto-props]
+*.apt = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.c = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.cpp = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.cs = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.css = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.dtd = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.ent = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.fml = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.groovy = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.h = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.hpp = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.html = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.idl = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.include = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.java = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.js = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.jsp = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.ldf = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.ldif = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.mak = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.mdo = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.php = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.rb = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.rtf = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.sql = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.svg = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.t2t = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.vm = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.xhtml = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+*.xml = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision;svn:mime-type=text/xml
+*.xsd = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision;svn:mime-type=text/xml
+*.xsl = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision;svn:mime-type=text/xml
+*.xslt = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision;svn:mime-type=text/xml
+Makefile = svn:eol-style=native;svn:keywords=Author Date Id HeadURL Revision
+
+*.launch = svn:eol-style=native
+*.MF = svn:eol-style=native
+*.properties = svn:eol-style=native
+*.script = svn:eol-style=native
+*.txt = svn:eol-style=native
+
+*.dsp = svn:eol-style=CRLF
+*.dsw = svn:eol-style=CRLF
+
+*.iml = svn:eol-style=LF
+
+*.bat = svn:eol-style=CRLF;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+*.cmd = svn:eol-style=CRLF;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+
+*.ksh = svn:eol-style=LF;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+*.sh = svn:eol-style=LF;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+
+*.pl = svn:eol-style=native;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+*.py = svn:eol-style=native;svn:executable;svn:keywords=Author Date Id HeadURL Revision
+
+*.bmp = svn:mime-type=image/bmp
+*.gif = svn:mime-type=image/gif
+*.ico = svn:mime-type=image/x-icon
+*.jpeg = svn:mime-type=image/jpeg
+*.jpg = svn:mime-type=image/jpeg
+*.png = svn:mime-type=image/png
+*.tif = svn:mime-type=image/tiff
+*.tiff = svn:mime-type=image/tiff
+
+*.doc = svn:mime-type=application/msword
+*.jar = svn:mime-type=application/octet-stream
+*.odc = svn:mime-type=application/vnd.oasis.opendocument.chart
+*.odf = svn:mime-type=application/vnd.oasis.opendocument.formula
+*.odg = svn:mime-type=application/vnd.oasis.opendocument.graphics
+*.odi = svn:mime-type=application/vnd.oasis.opendocument.image
+*.odp = svn:mime-type=application/vnd.oasis.opendocument.presentation
+*.ods = svn:mime-type=application/vnd.oasis.opendocument.spreadsheet
+*.odt = svn:mime-type=application/vnd.oasis.opendocument.text
+*.pdf = svn:mime-type=application/pdf
+*.ppt = svn:mime-type=application/vnd.ms-powerpoint
+*.ser = svn:mime-type=application/octet-stream
+*.swf = svn:mime-type=application/x-shockwave-flash
+*.vsd = svn:mime-type=application/x-visio
+*.xls = svn:mime-type=application/vnd.ms-excel
+*.zip = svn:mime-type=application/zip
