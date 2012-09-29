@@ -53,3 +53,8 @@ fi
 
 export EDITOR=vim
 
+function sshrm {
+    ssh-keygen -R $1
+    host $1 | sed 's/ .* / /g' | xargs -n 1 ssh-keygen -R
+}
+
