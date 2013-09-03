@@ -1,9 +1,12 @@
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "vim/bundle/vim-puppet"]
-	path = vim/bundle/vim-puppet
+[submodule ".vim/bundle/vim-puppet"]
+	path = .vim/bundle/vim-puppet
 	url = https://github.com/netdata/vim-puppet
-[submodule "themes/Super-Slim"]
-	path = themes/Super-Slim
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule ".themes/Super-Slim"]
+	path = .themes/Super-Slim
 	url = https://github.com/ajashton/Super-Slim.git
