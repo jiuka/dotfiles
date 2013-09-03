@@ -9,7 +9,7 @@
 set nocompatible
 
 "Pathogen
-call pathogen#infect('bundle')
+execute pathogen#infect()
 
 "
 " Indentation
@@ -49,3 +49,5 @@ set statusline=%<%f\ %(\ [%M%R%H%Y]%)%=%-14.(%l,%c%V%)\ %P
 " Autoreload
 "
 autocmd! bufwritepost .vimrc source %
+
+let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'

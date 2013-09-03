@@ -14,5 +14,6 @@
     ci = commit
     co = checkout
     br = branch
+    go = "!sh -c 'git pull --rebase && git push'"
 [color]
 	ui = true
