@@ -58,4 +58,4 @@ function sshrm {
     host $1 | sed 's/ .* / /g' | xargs -n 1 ssh-keygen -R
 }
 
-alias dotgit="git --git-dir=$HOME/git/github/dotfiles.git --work-tree=$HOME"
+alias dotgit="git --git-dir=$HOME/git/github/dotfiles.git"
