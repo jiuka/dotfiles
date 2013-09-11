@@ -25,6 +25,10 @@ case ${TERM} in
     ;;
 esac
 
+if [ -e "/usr/share/git-core/contrib/completion/git-prompt.sh" ]; then
+  . /usr/share/git-core/contrib/completion/git-prompt.sh
+fi
+
 if [[ ${EUID} == 0 ]] ; then
   PS1='\[\033[00;31m\]\h[\[\e[01;31m\]$?\[\e[00;31m\]]\[\033[01;34m\] \W \[\033[0;33m\]$(__git_ps1 "<%s> ")\[\033[01;34m\]\$\[\033[00m\] '
 else
