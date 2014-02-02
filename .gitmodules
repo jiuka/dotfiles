@@ -3,10 +3,16 @@
 	url = https://github.com/scrooloose/syntastic.git
 [submodule ".vim/bundle/vim-puppet"]
 	path = .vim/bundle/vim-puppet
-	url = https://github.com/netdata/vim-puppet
+	url = https://github.com/rodjek/vim-puppet.git
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
 [submodule ".themes/Super-Slim"]
 	path = .themes/Super-Slim
+	url = https://github.com/ajashton/Super-Slim.git
+[submodule ".vim/bundle/fugitive"]
+	path = .vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".local/share/themes/Super-Slim"]
+	path = .local/share/themes/Super-Slim
 	url = https://github.com/ajashton/Super-Slim.git
