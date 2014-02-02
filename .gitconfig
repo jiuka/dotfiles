@@ -14,6 +14,7 @@
     ci = commit
     co = checkout
     br = branch
+    mb = merge-base origin/HEAD HEAD
     go = "!sh -c 'git pull --rebase && git push'"
 [color]
 	ui = true
