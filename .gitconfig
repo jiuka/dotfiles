@@ -18,3 +18,7 @@
     go = "!sh -c 'git pull --rebase && git push'"
 [color]
 	ui = true
+[push]
+	default = simple
+[core]
+	excludesfile = /home/marius/.gitexclude
