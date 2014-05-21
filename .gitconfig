@@ -6,19 +6,18 @@
 #   |___/                            |___/
 
 [user]
-    name = Marius Rieder
-    email = marius.rieder@durchmesser.ch
+  name = Marius Rieder
+  email = marius.rieder@durchmesser.ch
 
 [alias]
-    st = status
-    ci = commit
-    co = checkout
-    br = branch
-    mb = merge-base origin/HEAD HEAD
-    go = "!sh -c 'git pull --rebase && git push'"
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  mb = merge-base origin/HEAD HEAD
+  go = "!sh -c 'git pull --rebase && git push'"
+  tree = log --graph --all --format='format:%C(yellow)%h%Creset %Cgreen%d%Creset %s'
 [color]
-	ui = true
-[push]
-	default = simple
+  ui = true
 [core]
-	excludesfile = /home/marius/.gitexclude
+  excludesfile = /home/marius/.gitexclude
