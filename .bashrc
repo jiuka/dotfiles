@@ -35,6 +35,11 @@ else
   PS1='\[\033[00;32m\]\h[\[\e[01;31m\]$?\[\e[00;32m\]]\[\033[01;34m\] \w \[\033[0;33m\]$(__git_ps1 "<%s> ")\[\033[01;34m\]\$\[\033[00m\] '
 fi
 
+# Enable Keychain if ssh-agent is missing
+if [ -z "$SSH_AGENT_PID" -a -e /usr/bin/keychain ]; then
+  eval $(/usr/bin/keychain --eval --quiet)
+fi
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
   eval "$(dircolors -b)"
