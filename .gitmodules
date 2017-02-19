@@ -10,12 +10,6 @@
 [submodule ".themes/Super-Slim"]
 	path = .themes/Super-Slim
 	url = https://github.com/ajashton/Super-Slim.git
-[submodule ".vim/bundle/fugitive"]
-	path = .vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule ".local/share/themes/Super-Slim"]
 	path = .local/share/themes/Super-Slim
 	url = https://github.com/ajashton/Super-Slim.git
-[submodule ".vim/bundle/quickfixsigns_vim"]
-	path = .vim/bundle/quickfixsigns_vim
-	url = https://github.com/tomtom/quickfixsigns_vim.git
