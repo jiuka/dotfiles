@@ -16,6 +16,10 @@ shopt -s checkwinsize
 # Enable history appending instead of overwriting.
 shopt -s histappend
 
+if [ -z "$TMUX" ]; then
+  export TERM=xterm-256color
+fi
+
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*|interix)
     PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
@@ -68,3 +72,7 @@ function sshrm {
 }
 
 alias dotgit="git --git-dir=$HOME/git/github/dotfiles.git"
+
+if [ -e ~/.bashrc.local ]; then
+  . ~/.bashrc.local
+fi
