@@ -71,7 +71,11 @@ function sshrm {
   host $1 | sed 's/ .* / /g' | xargs -n 1 ssh-keygen -R
 }
 
+# dotgit
 alias dotgit="git --git-dir=$HOME/git/github/dotfiles.git"
+if [ "$(type -t __git_complete)" == "function" ]; then
+  __git_complete dotgit __git_main
+fi
 
 if [ -e ~/.bashrc.local ]; then
   . ~/.bashrc.local
